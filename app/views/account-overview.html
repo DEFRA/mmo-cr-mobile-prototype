@@ -1,0 +1,52 @@
+{% extends "layouts/main.html" %}
+
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{% from "govuk/components/table/macro.njk" import govukTable %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% set pageName = "Your trips" %}
+
+{% block content %}
+
+{{ govukBackLink({
+  text: "Back",
+  href: "/sign-in"
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Your trips</h1>
+
+    <p class="govuk-body">View trips you've already submitted.</p>
+    <p class="govuk-body">Tap on a departure date to see the details you recorded.</p>
+    <p class="govuk-body">Note: You can only add new trips and view your account settings on the web service, not in this app.</p>
+
+    {{ govukTable({
+      rows: [
+        [
+          { text: "23 Nov 2020" },
+          { text: "ACHILLES" },
+          { html: '<strong class="govuk-tag govuk-tag--light-blue">Original</strong>' }
+        ],
+        [
+          { text: "20 Nov 2020" },
+          { text: "ACHILLES" },
+          { html: '<strong class="govuk-tag govuk-tag--light-blue">Original</strong>' }
+        ],
+        [
+          { text: "20 Nov 2020" },
+          { text: "ACHILLES" },
+          { html: '<strong class="govuk-tag govuk-tag--light-blue">Original</strong>' }
+        ]
+      ]
+    }) }}
+
+    {{ govukButton({
+      text: "Create a new catch record",
+      href: "#"
+    }) }}
+
+  </div>
+</div>
+{% endblock %}

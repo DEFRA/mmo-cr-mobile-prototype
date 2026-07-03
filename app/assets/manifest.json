@@ -1,0 +1,24 @@
+{
+  "name": "MMO Catch Record",
+  "short_name": "Catch Record",
+  "description": "Marine Management Organisation fish catch recording",
+  "start_url": "/sign-in",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1d70b8",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/plugin-assets/govuk-frontend/dist/govuk/assets/rebrand/images/govuk-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/plugin-assets/govuk-frontend/dist/govuk/assets/rebrand/images/govuk-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
